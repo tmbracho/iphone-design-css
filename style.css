@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #fefdfdeb;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #e8e8e8;
+}
+
+.card {
+  width: 210px;
+  height: 400px;
+  background: #000;
+  border-radius: 30px;
+  border: 2px solid rgb(40, 40, 40);
+  padding: 4px;
+  position: relative;
+  box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.048);
+}
+
+.card-int {
+  /* background: linear-gradient(90deg, #1cb5e0 0%, #000851 100%); */
+  background: linear-gradient(
+    to right bottom,
+    #1cb5e0,
+    #1792b4,
+    #12708a,
+    #000851
+  );
+  background-size: 200% 200%;
+  background-position: 0 0;
+  height: 100%;
+  border-radius: 25px;
+  transition: all 0.8s;
+  overflow: hidden;
+}
+
+.card:hover .card-int {
+  background-position: 100% 100%;
+}
+
+.notch {
+  position: absolute;
+  top: 7px;
+  right: 50%;
+  transform: translate(50%, 0);
+  width: 33%;
+  height: 18px;
+  background: #000;
+  border-radius: 10px;
+}
+
+.speaker {
+  position: absolute;
+  top: 2px;
+  right: 50%;
+  transform: translate(50%, 0);
+  width: 16%;
+  height: 2px;
+  border-radius: 2px;
+  background: rgb(50, 50, 50);
+}
+
+.camera {
+  position: absolute;
+  top: 6px;
+  right: 84%;
+  transform: translate(50%, 0);
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  background: #ffffff9d;
+}
+
+.hello {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 35px;
+  height: 100%;
+}
